@@ -1,11 +1,11 @@
 //--------------------------------------------------------------------------------------------------
-// Design    : bvp
-// Author(s) : qiu bin, shi tian qi
-// Email     : chat1@126.com, tishi1@126.com
-// Copyright (C) 2013-2017 qiu bin, shi tian qi
-// All rights reserved
+// Copyright (C) 2013-2017 qiu bin 
+// All rights reserved   
+// Design    : bitstream_p
+// Author(s) : qiu bin
+// Email     : chat1@126.com
 // Phone 15957074161
-// QQ:1517642772
+// QQ:1517642772             
 //-------------------------------------------------------------------------------------------------
 module dp_fifo
 (
@@ -32,13 +32,12 @@ input  [data_bits-1:0] wr_data;
 output reg wr_full;
 
 input  wire rd;
-output wire [data_bits-1:0] rd_data;
 output wire [addr_bits-1:0] words_avail;
 (*mark_debug="true"*)
 output reg rd_empty;
 
 (*mark_debug="true"*)
-reg [data_bits-1:0] rd_data;
+output reg [data_bits-1:0] rd_data;
 
 (*mark_debug="true"*)
 reg [addr_bits-1:0] wr_addr;
